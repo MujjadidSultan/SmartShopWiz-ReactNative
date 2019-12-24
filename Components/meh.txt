@@ -1,0 +1,25 @@
+<MenuProvider style={{ flexDirection: "column", padding: 30 }}>
+        <Menu onSelect={value => alert(`You Clicked : ${value}`)}>
+        <MenuTrigger  >
+          <Text>DropDown Menu</Text>
+          </MenuTrigger  >
+          <MenuOptions>
+            <MenuOption value={"Login"}>
+              <Text>Login</Text>
+            </MenuOption>
+            <MenuOption value={"Register"}>
+              <Text >Register</Text>
+            </MenuOption>
+            <MenuOption value={"Download"}>
+              <Text>Download</Text>
+            </MenuOption>
+            <MenuOption value={"Logout"}>
+              <Text>Logout</Text>
+            </MenuOption>
+            <MenuOption value={3} disabled={true}>
+              <Text>Disabled Menu</Text>
+            </MenuOption>
+          </MenuOptions>
+
+        </Menu>
+      </MenuProvider>
